@@ -5,7 +5,7 @@ public class Pagamento {
 	
 	private String pagador;
 	
-	private String cnpjPagador;
+	private Documento cnpjPagador;
 	
 	private double valor;
 	
@@ -23,10 +23,10 @@ public class Pagamento {
 	public void setPagador(String pagador) {
 		this.pagador = pagador;
 	}
-	public String getCnpjPagador() {
+	public Documento getCnpjPagador() {
 		return cnpjPagador;
 	}
-	public void setCnpjPagador(String cnpjPagador) {
+	public void setCnpjPagador(Documento cnpjPagador) {
 		this.cnpjPagador = cnpjPagador;
 	}
 	public double getValor() {

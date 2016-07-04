@@ -2,6 +2,13 @@
 public class CNPJ implements Documento{
 	private String valor;
 
+	public CNPJ(String valor) {
+		this.valor = valor;
+	}
+	
+	public CNPJ() {
+	}
+
 	public void setValor(String cnpjCredor) {
 		this.valor = cnpjCredor;
 	}

@@ -11,7 +11,7 @@ public class RelatorioDeDivida {
 	}
 	
 	public void gerarRelatorio(){
-		System.out.println("CNPj Credor: " + divida.getCnpjCredor());
+		System.out.println("CNPj Credor: " + divida.getDocumentoCredor());
 		System.out.println("Credor: " + divida.getCredor());
 		
 		//NumberFormat numberFormat = NumberFormat.getCurrencyInstance(new Locale("pt","BR"));

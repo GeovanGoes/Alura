@@ -1,14 +1,15 @@
 import java.util.HashMap;
 import java.util.Map;
 
-
 public class BalancoEmpresa {
 	
 	private Map<Documento, Divida> dividas = new HashMap<Documento, Divida>();
 	
 	public void registraDivida(String credor,String cnpjCredor, double valor){
 		Divida divida = new Divida();
-		divida.setDocumentoCredor(new CNPJ().setValor(cnpjCredor));
+		CNPJ cnpj = new CNPJ();
+		cnpj.setValor(cnpjCredor);
+		divida.setDocumentoCredor(cnpj);
 		divida.setCredor(credor);
 		divida.setTotal(valor);
 		dividas.put(divida.getDocumentoCredor(), divida);
@@ -18,7 +19,9 @@ public class BalancoEmpresa {
 		Divida divida = dividas.get(cnpjCredor);
 		if(divida != null){
 			Pagamento pagamento = new Pagamento();
-			pagamento.setCnpjPagador(cnpjPagador);
+			CNPJ cnpj = new CNPJ();
+			cnpj.setValor(cnpjPagador);
+			pagamento.setCnpjPagador(cnpj);
 			pagamento.setPagador(nomePagador);
 			pagamento.setValor(valor);
 			divida.registra(pagamento);
