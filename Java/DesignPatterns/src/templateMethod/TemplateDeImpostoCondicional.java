@@ -5,8 +5,17 @@ import java.math.BigDecimal;
 import commons.Imposto;
 import commons.Orcamento;
 
-public abstract class TemplateDeImpostoCondicional implements Imposto{
+public abstract class TemplateDeImpostoCondicional extends Imposto{
 
+	public TemplateDeImpostoCondicional(Imposto imposto) 
+	{
+		super(imposto);
+	}
+	
+	public TemplateDeImpostoCondicional() 
+	{
+	}
+	
 	@Override
 	public BigDecimal calcula(Orcamento orcamento) {
 		if(deveUsarMaximaTaxacao(orcamento)){

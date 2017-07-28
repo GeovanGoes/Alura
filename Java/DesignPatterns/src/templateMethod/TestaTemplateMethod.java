@@ -13,6 +13,6 @@ public class TestaTemplateMethod {
 		orcamento.adicionaItem(new Item("Lapis", new BigDecimal("250")));
 		
 		CalculadorDeImposto calculadorDeImposto = new CalculadorDeImposto();
-		calculadorDeImposto.realizaCalculo(orcamento, new IKCV());
+		calculadorDeImposto.realizaCalculo(orcamento, new IKCV(new ICPP()));
 	}
 }
