@@ -8,9 +8,9 @@ public class TesteDaNF
 		NotaFiscalBuilder builder = new NotaFiscalBuilder();
 		builder.paraEmpresa("empresa tal")
 		.comCNPJ("3456789")
-		.comItem(new ItemDaNota("buceta", 500))
-		.comItem(new ItemDaNota("item 2", 300))		
-		.comItem(new ItemDaNota("item 3", 400))
+		.com(new ItemDaNota("buceta", 500))
+		.com(new ItemDaNota("item 2", 300))		
+		.com(new ItemDaNota("item 3", 400))
 		.comObservacvoes("me chupa")
 		.naDataAtual();
 		
