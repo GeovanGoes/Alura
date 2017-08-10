@@ -17,9 +17,9 @@ public class TesteAcoes {
 		.adicionaAcao(new Impressora())
 		.paraEmpresa("minha empresa")
 		.comCNPJ("1234")
-		.com(new ItemDaNota("Buceta", 580))
-		.com(new ItemDaNota("puta", 15400))
-		.comObservacvoes("me chupa")
+		.com(new ItemDaNota("Fonte", 580))
+		.com(new ItemDaNota("Processador", 15400))
+		.comObservacvoes("Obsss")
 		.naDataAtual()
 		.constroi();
 		

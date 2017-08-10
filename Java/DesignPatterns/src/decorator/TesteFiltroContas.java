@@ -21,7 +21,7 @@ public class TesteFiltroContas {
 		contas.add(new Conta("Geovan", new BigDecimal(99), doisMesesAtras));
 		contas.add(new Conta("Patricia", new BigDecimal(501), doisMesesAtras));
 		contas.add(new Conta("Erick", new BigDecimal(400), LocalDate.now()));
-		contas.add(new Conta("Puta", new BigDecimal(400), doisMesesAtras));
+		contas.add(new Conta("Lula", new BigDecimal(400), doisMesesAtras));
 		
 		Filtro menorQueCem = new MenorQueCem();
 		Filtro filtroMesCorrente = new AberturaNoMesCorrente(menorQueCem);
